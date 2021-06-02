@@ -6,8 +6,7 @@
 #include "SimpleConverter.hpp"
 
     opencc::SimpleConverter* converter;
-
-    //extern __declspec(dllexport) int SCWrapperInit(const char* configFileName);
+    char* temp = new char[2048]; 
 
     extern "C" __declspec(dllexport) void __stdcall SCWrapperInit(
         const char* configFileName);
